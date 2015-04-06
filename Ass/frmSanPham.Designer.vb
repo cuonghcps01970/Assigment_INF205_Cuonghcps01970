@@ -40,7 +40,6 @@ Partial Class frmSanPham
         Me.btnxoa = New System.Windows.Forms.Button()
         Me.cbx1 = New System.Windows.Forms.ComboBox()
         Me.btnnhaplai = New System.Windows.Forms.Button()
-        Me.Label6 = New System.Windows.Forms.Label()
         CType(Me.DGV2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -187,21 +186,11 @@ Partial Class frmSanPham
         Me.btnnhaplai.Text = "Nhập Lại"
         Me.btnnhaplai.UseVisualStyleBackColor = True
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(533, 15)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(39, 13)
-        Me.Label6.TabIndex = 17
-        Me.Label6.Text = "Label6"
-        '
         'frmSanPham
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(714, 429)
-        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.btnnhaplai)
         Me.Controls.Add(Me.cbx1)
         Me.Controls.Add(Me.btnxoa)
@@ -244,5 +233,4 @@ Partial Class frmSanPham
     Friend WithEvents btnxoa As System.Windows.Forms.Button
     Friend WithEvents cbx1 As System.Windows.Forms.ComboBox
     Friend WithEvents btnnhaplai As System.Windows.Forms.Button
-    Friend WithEvents Label6 As System.Windows.Forms.Label
 End Class
