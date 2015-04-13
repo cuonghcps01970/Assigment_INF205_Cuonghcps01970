@@ -96,7 +96,7 @@ Public Class frmSanPham
 
         thucthicaulenh2.ExecuteNonQuery()
 
-
+        MsgBox("Đã sửa thành công", MsgBoxStyle.Information, "Thông Báo")
 
         Dim caulenhSELECT As SqlDataAdapter = New SqlDataAdapter("select * from SanPham", ketnoi)
         csdl.Clear()
@@ -114,7 +114,7 @@ Public Class frmSanPham
         ketnoi.Open()
         thucthicaulenh.Parameters.AddWithValue("@masp", txtMasp.Text)
         thucthicaulenh.ExecuteNonQuery()
-
+        MsgBox("Đã xóa thành công", MsgBoxStyle.Information, "Thông Báo")
         Dim caulenhselect As SqlDataAdapter = New SqlDataAdapter("Select * from SanPham", ketnoi)
         csdl.Clear()
         caulenhselect.Fill(csdl)

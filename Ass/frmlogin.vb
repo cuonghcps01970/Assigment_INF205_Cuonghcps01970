@@ -3,7 +3,11 @@
 Public Class frmdangnhap
 
     Private Sub btndangnhap_Click(sender As Object, e As EventArgs) Handles btndangnhap.Click
+      
+
+
         ' Tạo chuổi kết nối'
+
         Dim chuoiketnoi As String = "workstation id=Cuonghcps01970.mssql.somee.com;packet size=4096;user id=cuonghcps01970;pwd=Minutes123;data source=Cuonghcps01970.mssql.somee.com;persist security info=False;initial catalog=Cuonghcps01970"
         'tạo kết nối thông quan chuổi kết nối'
         Dim ketnoi As SqlConnection = New SqlConnection(chuoiketnoi)
@@ -31,6 +35,7 @@ Public Class frmdangnhap
     Private Sub btnxoa_Click(sender As Object, e As EventArgs) Handles btnxoa.Click
         tbxtaikhoan.Text = ""
         tbxmatkhau.Text = ""
+        tbxtaikhoan.Focus()
 
     End Sub
 

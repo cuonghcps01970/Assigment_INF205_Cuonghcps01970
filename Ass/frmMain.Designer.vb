@@ -31,9 +31,10 @@ Partial Class frmMain
         Me.QuảnLýSảnPhẩmToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ThêmSảnPhẩmToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QuảnLýKháchHàngToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.lblResultStatus = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblResultLogin = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -92,23 +93,24 @@ Partial Class frmMain
         Me.QuảnLýKháchHàngToolStripMenuItem.Size = New System.Drawing.Size(131, 20)
         Me.QuảnLýKháchHàngToolStripMenuItem.Text = "Quản Lý Khách Hàng"
         '
-        'lblResultStatus
+        'PictureBox1
         '
-        Me.lblResultStatus.AutoSize = True
-        Me.lblResultStatus.Location = New System.Drawing.Point(12, 239)
-        Me.lblResultStatus.Name = "lblResultStatus"
-        Me.lblResultStatus.Size = New System.Drawing.Size(148, 13)
-        Me.lblResultStatus.TabIndex = 1
-        Me.lblResultStatus.Text = "Bạn đăng nhập với tài khoản:"
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 27)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(684, 235)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
         '
         'lblResultLogin
         '
         Me.lblResultLogin.AutoSize = True
-        Me.lblResultLogin.Location = New System.Drawing.Point(166, 239)
+        Me.lblResultLogin.Location = New System.Drawing.Point(645, 9)
         Me.lblResultLogin.Name = "lblResultLogin"
-        Me.lblResultLogin.Size = New System.Drawing.Size(35, 13)
+        Me.lblResultLogin.Size = New System.Drawing.Size(39, 13)
         Me.lblResultLogin.TabIndex = 2
-        Me.lblResultLogin.Text = "label1"
+        Me.lblResultLogin.Text = "Label1"
         '
         'frmMain
         '
@@ -116,7 +118,7 @@ Partial Class frmMain
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(684, 261)
         Me.Controls.Add(Me.lblResultLogin)
-        Me.Controls.Add(Me.lblResultStatus)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -124,6 +126,7 @@ Partial Class frmMain
         Me.Text = "Quản Lý"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -136,6 +139,6 @@ Partial Class frmMain
     Friend WithEvents QuảnLýSảnPhẩmToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ThêmSảnPhẩmToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents QuảnLýKháchHàngToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents lblResultStatus As System.Windows.Forms.Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents lblResultLogin As System.Windows.Forms.Label
 End Class

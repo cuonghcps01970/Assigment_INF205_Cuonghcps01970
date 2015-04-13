@@ -135,9 +135,12 @@ Partial Class frmSanPham
         '
         'DGV2
         '
+        Me.DGV2.AllowUserToAddRows = False
+        Me.DGV2.AllowUserToDeleteRows = False
         Me.DGV2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGV2.Location = New System.Drawing.Point(12, 191)
         Me.DGV2.Name = "DGV2"
+        Me.DGV2.ReadOnly = True
         Me.DGV2.Size = New System.Drawing.Size(690, 226)
         Me.DGV2.TabIndex = 11
         '

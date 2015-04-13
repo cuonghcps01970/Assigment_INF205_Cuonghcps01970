@@ -29,12 +29,14 @@ Partial Class frmdangnhap
         Me.tbxmatkhau = New System.Windows.Forms.TextBox()
         Me.btndangnhap = New System.Windows.Forms.Button()
         Me.btnxoa = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(60, 31)
+        Me.Label1.Location = New System.Drawing.Point(12, 31)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(96, 26)
         Me.Label1.TabIndex = 0
@@ -44,7 +46,7 @@ Partial Class frmdangnhap
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(60, 65)
+        Me.Label2.Location = New System.Drawing.Point(12, 65)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(77, 20)
         Me.Label2.TabIndex = 1
@@ -52,22 +54,22 @@ Partial Class frmdangnhap
         '
         'tbxtaikhoan
         '
-        Me.tbxtaikhoan.Location = New System.Drawing.Point(162, 33)
+        Me.tbxtaikhoan.Location = New System.Drawing.Point(93, 33)
         Me.tbxtaikhoan.Name = "tbxtaikhoan"
-        Me.tbxtaikhoan.Size = New System.Drawing.Size(251, 20)
+        Me.tbxtaikhoan.Size = New System.Drawing.Size(143, 20)
         Me.tbxtaikhoan.TabIndex = 2
         '
         'tbxmatkhau
         '
-        Me.tbxmatkhau.Location = New System.Drawing.Point(162, 67)
+        Me.tbxmatkhau.Location = New System.Drawing.Point(93, 65)
         Me.tbxmatkhau.Name = "tbxmatkhau"
-        Me.tbxmatkhau.PasswordChar = Global.Microsoft.VisualBasic.ChrW(120)
-        Me.tbxmatkhau.Size = New System.Drawing.Size(251, 20)
+        Me.tbxmatkhau.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.tbxmatkhau.Size = New System.Drawing.Size(143, 20)
         Me.tbxmatkhau.TabIndex = 3
         '
         'btndangnhap
         '
-        Me.btndangnhap.Location = New System.Drawing.Point(246, 137)
+        Me.btndangnhap.Location = New System.Drawing.Point(161, 115)
         Me.btndangnhap.Name = "btndangnhap"
         Me.btndangnhap.Size = New System.Drawing.Size(75, 23)
         Me.btndangnhap.TabIndex = 4
@@ -76,12 +78,22 @@ Partial Class frmdangnhap
         '
         'btnxoa
         '
-        Me.btnxoa.Location = New System.Drawing.Point(338, 137)
+        Me.btnxoa.Location = New System.Drawing.Point(80, 115)
         Me.btnxoa.Name = "btnxoa"
         Me.btnxoa.Size = New System.Drawing.Size(75, 23)
         Me.btnxoa.TabIndex = 5
         Me.btnxoa.Text = "Xóa"
         Me.btnxoa.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(283, 35)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 103)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 6
+        Me.PictureBox1.TabStop = False
         '
         'frmdangnhap
         '
@@ -89,6 +101,7 @@ Partial Class frmdangnhap
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(425, 172)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnxoa)
         Me.Controls.Add(Me.btndangnhap)
         Me.Controls.Add(Me.tbxmatkhau)
@@ -98,6 +111,7 @@ Partial Class frmdangnhap
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmdangnhap"
         Me.Text = "Đăng Nhập"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -108,5 +122,6 @@ Partial Class frmdangnhap
     Friend WithEvents tbxmatkhau As System.Windows.Forms.TextBox
     Friend WithEvents btndangnhap As System.Windows.Forms.Button
     Friend WithEvents btnxoa As System.Windows.Forms.Button
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 
 End Class

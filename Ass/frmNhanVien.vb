@@ -90,6 +90,7 @@ Public Class frmNhanVien
             thucthicaulenh1.Parameters.AddWithValue("@manv", tbxmatk.Text)
 
             thucthicaulenh1.ExecuteNonQuery()
+            MsgBox("Đã xóa thành công", MsgBoxStyle.Information, "Thông Báo")
         Catch ex As Exception
             MessageBox.Show("lổi")
         End Try
@@ -115,20 +116,20 @@ Public Class frmNhanVien
 
 
         Dim thucthicaulenh As New SqlCommand(caulenh4, ketnoi3)
-        Try
-            thucthicaulenh.Parameters.AddWithValue("@manv", tbxmatk.Text)
-            thucthicaulenh.Parameters.AddWithValue("@hoten", tbxname.Text)
-            thucthicaulenh.Parameters.AddWithValue("@diachi", tbxdiachi.Text)
-            thucthicaulenh.Parameters.AddWithValue("@sodt", tbxsdt.Text)
-            thucthicaulenh.Parameters.AddWithValue("@email", tbxemail.Text)
-            thucthicaulenh.Parameters.AddWithValue("@matkhau", tbxmatkhau.Text)
 
-            thucthicaulenh.ExecuteNonQuery()
+        thucthicaulenh.Parameters.AddWithValue("@manv", tbxmatk.Text)
+        thucthicaulenh.Parameters.AddWithValue("@hoten", tbxname.Text)
+        thucthicaulenh.Parameters.AddWithValue("@diachi", tbxdiachi.Text)
+        thucthicaulenh.Parameters.AddWithValue("@sodt", tbxsdt.Text)
+        thucthicaulenh.Parameters.AddWithValue("@email", tbxemail.Text)
+        thucthicaulenh.Parameters.AddWithValue("@matkhau", tbxmatkhau.Text)
+
+        thucthicaulenh.ExecuteNonQuery()
 
 
-        Catch ex As Exception
-            MessageBox.Show("Có thể xãy ra lổi hãy thử lại lần nữa")
-        End Try
+
+        MsgBox("Đã sửa thành công", MsgBoxStyle.Information, "Thông Báo")
+
 
 
         Dim caulenhtruyvan2 As SqlDataAdapter = New SqlDataAdapter(" select" +

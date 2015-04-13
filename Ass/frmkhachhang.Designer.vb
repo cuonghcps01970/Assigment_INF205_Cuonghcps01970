@@ -34,7 +34,7 @@ Partial Class frmkhachhang
         Me.txtphone = New System.Windows.Forms.TextBox()
         Me.txtemail = New System.Windows.Forms.TextBox()
         Me.btnadd = New System.Windows.Forms.Button()
-        Me.txtedit = New System.Windows.Forms.Button()
+        Me.btnedit = New System.Windows.Forms.Button()
         Me.btndelete = New System.Windows.Forms.Button()
         Me.DGV1 = New System.Windows.Forms.DataGridView()
         CType(Me.DGV1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -129,14 +129,14 @@ Partial Class frmkhachhang
         Me.btnadd.Text = "Thêm"
         Me.btnadd.UseVisualStyleBackColor = True
         '
-        'txtedit
+        'btnedit
         '
-        Me.txtedit.Location = New System.Drawing.Point(133, 89)
-        Me.txtedit.Name = "txtedit"
-        Me.txtedit.Size = New System.Drawing.Size(75, 23)
-        Me.txtedit.TabIndex = 11
-        Me.txtedit.Text = "Sửa"
-        Me.txtedit.UseVisualStyleBackColor = True
+        Me.btnedit.Location = New System.Drawing.Point(133, 89)
+        Me.btnedit.Name = "btnedit"
+        Me.btnedit.Size = New System.Drawing.Size(75, 23)
+        Me.btnedit.TabIndex = 11
+        Me.btnedit.Text = "Sửa"
+        Me.btnedit.UseVisualStyleBackColor = True
         '
         'btndelete
         '
@@ -149,9 +149,12 @@ Partial Class frmkhachhang
         '
         'DGV1
         '
+        Me.DGV1.AllowUserToAddRows = False
+        Me.DGV1.AllowUserToDeleteRows = False
         Me.DGV1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGV1.Location = New System.Drawing.Point(12, 127)
         Me.DGV1.Name = "DGV1"
+        Me.DGV1.ReadOnly = True
         Me.DGV1.Size = New System.Drawing.Size(605, 241)
         Me.DGV1.TabIndex = 13
         '
@@ -162,7 +165,7 @@ Partial Class frmkhachhang
         Me.ClientSize = New System.Drawing.Size(629, 380)
         Me.Controls.Add(Me.DGV1)
         Me.Controls.Add(Me.btndelete)
-        Me.Controls.Add(Me.txtedit)
+        Me.Controls.Add(Me.btnedit)
         Me.Controls.Add(Me.btnadd)
         Me.Controls.Add(Me.txtemail)
         Me.Controls.Add(Me.txtphone)
@@ -193,7 +196,7 @@ Partial Class frmkhachhang
     Friend WithEvents txtphone As System.Windows.Forms.TextBox
     Friend WithEvents txtemail As System.Windows.Forms.TextBox
     Friend WithEvents btnadd As System.Windows.Forms.Button
-    Friend WithEvents txtedit As System.Windows.Forms.Button
+    Friend WithEvents btnedit As System.Windows.Forms.Button
     Friend WithEvents btndelete As System.Windows.Forms.Button
     Friend WithEvents DGV1 As System.Windows.Forms.DataGridView
 End Class
