@@ -4,7 +4,7 @@ Public Class frmkhachhang
     Dim cons As String = "workstation id=Cuonghcps01970.mssql.somee.com;packet size=4096;user id=cuonghcps01970;pwd=Minutes123;data source=Cuonghcps01970.mssql.somee.com;persist security info=False;initial catalog=Cuonghcps01970"
     Dim DataTable1 As New DataTable
 
-
+    ' Edit by Cuonghcps01970@fpt.edu.vn
     Private Sub frmkhachhang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim consql As SqlConnection = New SqlConnection(cons)
         Dim QuerySlect As SqlDataAdapter = New SqlDataAdapter("select * from KhachHang", consql)
